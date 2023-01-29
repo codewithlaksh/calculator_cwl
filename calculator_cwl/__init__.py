@@ -14,6 +14,14 @@ Documentation:
             PyPi: https://pypi.org/user/laksh2552/
 """
 __version__ = 1.0
+import argparse
+import sys
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--version", action="version", version="calculator_cwl 1.2")
+    parser.parse_args()
+
 ## Warning: This code is valid for only Python 3.10.xx and later because the match-case is newly introduced in python 3.10.
 class Calculator:
     def add(self):
@@ -27,3 +35,5 @@ class Calculator:
 
     def divide(self):
         return self.a / self.b
+
+sys.exit(main())
