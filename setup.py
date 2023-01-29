@@ -6,7 +6,7 @@ fh.close()
 
 setuptools.setup(
     name="calculator_cwl",
-    version="1.1",
+    version="1.2",
     author="CodeWithLaksh",
     author_email="dashlakshyaraj2006@gmail.com",
     description="A Python Package Which does basic math calculation",

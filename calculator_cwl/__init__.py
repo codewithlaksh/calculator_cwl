@@ -13,13 +13,13 @@ Documentation:
             Github: https://github.com/codewithlaksh/calculator_cwl
             PyPi: https://pypi.org/user/laksh2552/
 """
-__version__ = 1.0
+__version__ = 1.2
 import argparse
 import sys
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", action="version", version="calculator_cwl 1.2")
+    parser.add_argument("--version", action="version", version="calculator_cwl"+str(__version__))
     parser.parse_args()
 
 ## Warning: This code is valid for only Python 3.10.xx and later because the match-case is newly introduced in python 3.10.
